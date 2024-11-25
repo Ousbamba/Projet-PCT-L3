@@ -1,0 +1,530 @@
+   /*  */
+   body {
+
+    font-family: Arial, sans-serif;
+   }
+
+   /* logo */
+   .navbar {
+       background-color: white !important;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   }
+
+   .navbar-brand img {
+       width: 40px;
+       height: 40px;
+   }
+
+   .detail-sur p {
+    color: #777;
+
+}
+
+   /* Navbar */
+   /* Style pour les éléments de la liste (li) */
+   .navbar-nav .nav-item .nav-link {
+       color: #009640;
+       font-family: Arial, sans-serif;
+       font-size: 18px;
+   }
+
+   .navbar-nav .nav-item .nav-link:hover {
+       color: #E30613;
+       /* Couleur du texte au survol */
+   }
+
+   .auth-buttons a {
+       text-decoration: none;
+       color: #312783;
+       ;
+   }
+
+   .auth-buttons a:hover {
+       color: white;
+   }
+
+   .auth-buttons {
+
+       font-weight: 700;
+       border: 2px solid #312783;
+       ;
+       color: #312783;
+       ;
+       background-color: transparent;
+       border-radius: 40px;
+       padding: 10px 20px;
+       text-decoration: none;
+       display: inline-block;
+   }
+
+   .auth-buttons:hover {
+       background-color: #009640;
+       border: 2px solid #009640;
+       color: white;
+   }
+
+
+   /* carrousel */
+   .home {
+       margin-top: 50px;
+       position: relative;
+       height: 100vh;
+       overflow: hidden;
+   }
+
+   .slide {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       display: none;
+   }
+
+   .slide.active {
+       display: block;
+   }
+
+   .slide img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: -1;
+       opacity: 0.8;
+       /* Diminue la visibilité de l'image */
+   }
+
+   .slide::before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.2);
+       z-index: 0;
+   }
+
+   .slide .content {
+       position: relative;
+       color: white;
+       text-align: center;
+       top: 50%;
+       transform: translateY(-50%);
+       z-index: 1;
+
+   }
+
+   .slide .content h2,
+   .slide .content h4 {
+       margin: 10px 0;
+   }
+
+   /* Animation Fade-In + Slide-Up */
+   @keyframes fadeInUp {
+       0% {
+           opacity: 0;
+           transform: translateY(20px);
+       }
+
+       100% {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   .slide .content h2,
+   .slide .content h4 {
+       opacity: 0;
+       animation: fadeInUp 2s ease forwards;
+   }
+
+   .slide.active .content h2 {
+       animation-delay: 0.5s;
+   }
+
+   .slide.active .content h4 {
+       animation-delay: 0.8s;
+   }
+
+
+   .button {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: #009640;
+       color: white;
+       border-radius: 20px;
+       text-decoration: none;
+       margin-top: 20px;
+   }
+
+   .dots {
+       position: absolute;
+       bottom: 60px;
+       left: 50%;
+       transform: translateX(-50%);
+       display: flex;
+       gap: 10px;
+   }
+
+   .dot {
+       width: 20px;
+       height: 20px;
+       border: 2px solid #009640;
+       ;
+       background-color: white;
+       border-radius: 50%;
+       cursor: pointer;
+   }
+
+   .dot.active {
+       background-color: #009640;
+   }
+
+   .home h2 {
+
+    font-family: Arial, sans-serif;
+       font-size: 2.5rem;
+   }
+
+   .home h4 {
+    font-family: Arial, sans-serif;
+       font-size: 1rem;
+
+   }
+
+   .tout-savoir {
+       background-color: rgb(239, 234, 234);
+       /* Fond violet */
+       padding: 20px;
+       color: #E30613;
+       ;
+       text-align: center;
+   }
+
+   .en-tete {
+       color: black;
+       margin-bottom: 20px;
+       font-weight: bold;
+       font-size: 30px;
+   }
+
+   .box-container {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+       justify-content: center;
+   }
+
+   .actu {
+       background-color: #fff;
+       border-radius: 10px;
+       overflow: hidden;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       max-width: 300px;
+       text-align: left;
+   }
+
+   .actu img {
+       width: 100%;
+       height: auto;
+       display: block;
+   }
+
+   .flex {
+       padding: 10px;
+   }
+
+   .desc_article {
+       margin-bottom: 10px;
+       font-size: 18px;
+       color: #312783;
+       ;
+   }
+
+   .date {
+       color: #312783;
+       ;
+       font-size: 14px;
+   }
+
+   .voir-plus {
+       display: inline-block;
+       margin-top: 1.5rem;
+       padding: 0.5rem 1rem;
+       background-color: #E30613;
+       color: #fff;
+       text-decoration: none;
+       border-radius: 25px;
+       transition: background-color 0.3s;
+   }
+
+   .voir-plus:hover {
+       background-color: #009640;
+   }
+
+   .actu:hover {
+       transform: scale(1.05);
+   }
+
+   .tout-savoir .en-tete span {
+       color: #E30613;
+   }
+
+
+   .hidden {
+       display: none;
+   }
+
+   .main-content {
+       padding: 4rem 2rem;
+       font-family: Arial, sans-serif;
+   }
+
+   .main-content .section {
+       margin-bottom: 2rem;
+   }
+
+   .main-content .section h2 {
+       font-size: 2rem;
+       margin-bottom: 1rem;
+       color: #009640;
+       text-align: center;
+   }
+
+   .main-content .section p {
+       font-size: 1rem;
+       margin-bottom: 1rem;
+       text-align: center;
+       color: #333;
+   }
+
+   .main-content .box-container {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+       grid-gap: 1rem;
+   }
+
+   .main-content .artisan-card {
+       background-color: #fff;
+       border-radius: 5px;
+       overflow: hidden;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s ease;
+       position: relative;
+   }
+
+   .main-content .artisan-card:hover {
+       transform: translateY(-10px);
+       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+   }
+
+   .main-content .artisan-card img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       transition: opacity 0.3s;
+   }
+
+   .main-content .artisan-card:hover img {
+       opacity: 0.8;
+   }
+
+   .main-content .artisan-card .details {
+       padding: 1rem;
+   }
+
+   .main-content .artisan-card .details h2 a {
+       color: #333;
+       text-decoration: none;
+       font-size: 1.2rem;
+       font-weight: bold;
+   }
+
+   .main-content .artisan-card .details h2 a:hover {
+       color: #E30613;
+   }
+
+   .main-content .artisan-card .details p {
+       color: #777;
+       margin-bottom: 1rem;
+   }
+
+   .cta-section {
+       background-color: #009640;
+       color: #fff;
+       padding: 2rem;
+       text-align: center;
+       border-radius: 5px;
+   }
+
+   .cta-section h2 {
+       font-size: 1.5rem;
+       margin-bottom: 1rem;
+   }
+
+   .cta-section p {
+       font-size: 1rem;
+       margin-bottom: 1.5rem;
+   }
+
+   .cta-section a {
+       color: #E30613;
+       background-color: #fff;
+       padding: 0.75rem 1.5rem;
+       border-radius: 5px;
+       border: 1px solid #E30613;
+       text-decoration: none;
+       transition: background-color 0.3s, color 0.3s;
+   }
+
+   .cta-section a:hover {
+       background-color: #E30613;
+       color: #fff;
+   }
+
+   .ct-section {
+       background-color: #F9B233;
+       color: #fff;
+       padding: 2rem;
+       text-align: center;
+       border-radius: 5px;
+   }
+
+   .ct-section h2 {
+       font-size: 1.5rem;
+       margin-bottom: 1rem;
+   }
+
+   .ct-section p {
+       font-size: 1rem;
+       margin-bottom: 1.5rem;
+   }
+
+   .ct-section a {
+       color: #E30613;
+       background-color: #fff;
+       padding: 0.75rem 1.5rem;
+       border-radius: 5px;
+       border: 1px solid #E30613;
+       text-decoration: none;
+       transition: background-color 0.3s, color 0.3s;
+   }
+
+   .ct-section a:hover {
+       background-color: #E30613;
+       color: #fff;
+   }
+
+   /* Vidéos sponsorisées section */
+   .vedeo-sponsorise {
+       background-color: #fff;
+       padding: 2rem;
+       text-align: center;
+   }
+
+   .vedeo-sponsorise .conteneur {
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+
+   .vedeo-sponsorise .row-1 {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 2rem;
+   }
+
+   .vedeo-sponsorise .box {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 1rem;
+       justify-content: center;
+   }
+
+   .vedeo-sponsorise .row-2 {
+       background-color: #f9f9f9;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s;
+   }
+
+   .vedeo-sponsorise .row-2:hover {
+       transform: scale(1.05);
+   }
+
+   .vedeo-sponsorise .video {
+       width: 100%;
+       height: auto;
+       border-bottom: 1px solid #ddd;
+   }
+
+   .vedeo-sponsorise h3 {
+       padding: 1rem;
+       font-size: 1.25rem;
+       color: #312783;
+   }
+
+   .vedeo-sponsorise .date {
+       padding: 0.5rem 1rem;
+       font-size: 0.875rem;
+       color: #777;
+       text-align: right;
+   }
+
+   /* Images dans le header et le footer */
+
+   footer img {
+
+       height: 50px;
+   }
+
+
+
+   /* Footer */
+   footer {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 50px;
+       background-color: #009640;
+       color: white;
+   }
+
+   footer .social-links a {
+       margin: 0 10px;
+       font-size: 1.5rem;
+       transition: color 0.3s;
+       color: white;
+   }
+
+
+   footer p.copyright {
+       margin: 0;
+       font-size: 1rem;
+       margin-left: 100px;
+
+
+   }
+
+   .social-links a .fa-facebook-f:hover {
+       color: #3b5998;
+       /* Couleur spécifique pour Facebook */
+   }
+
+   .social-links a .fa-twitter:hover {
+       color: #1da1f2;
+       /* Couleur spécifique pour Twitter */
+   }
+
+   .social-links a .fa-instagram:hover {
+       color: #c13584;
+       /* Couleur spécifique pour Instagram */
+   }
+
+   .social-links a .fa-linkedin-in:hover {
+       color: #0077b5;
+       /* Couleur spécifique pour LinkedIn */
+   }

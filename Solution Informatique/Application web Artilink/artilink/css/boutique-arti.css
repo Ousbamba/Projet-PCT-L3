@@ -1,0 +1,213 @@
+       /* Reset CSS */
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           font-family: Arial, sans-serif;
+           line-height: 1.6;
+           background-color: #f2f2f2;
+       }
+
+       /* Tout savoir section */
+       .tout-savoir {
+           padding: 6rem 2rem 2rem;
+           /* Ajout de 6rem de padding en haut */
+       }
+
+
+       .tout-savoir .en-tete {
+           font-size: 2rem;
+           margin-bottom: 1rem;
+       }
+
+       .tout-savoir .en-tete span {
+           color: #E30613;
+       }
+
+       .tout-savoir .aut-buttons {
+           display: flex;
+           gap: 10px;
+           margin-bottom: 1rem;
+       }
+
+       .tout-savoir .aut-buttons a {
+           color: #fff;
+           background-color: #312783;
+           padding: 0.5rem 1rem;
+           border-radius: 5px;
+           border: 1px solid #312783;
+           text-decoration: none;
+           transition: background-color 0.3s, color 0.3s;
+       }
+
+
+
+       .tout-savoir .aut-buttons a:hover {
+           color: #312783;
+           background-color: #fff;
+           border: 1px solid #312783;
+       }
+
+       .tout-savoir .box-container {
+           display: grid;
+           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+           grid-gap: 1rem;
+       }
+
+       .tout-savoir .actu {
+           background-color: #fff;
+           border-radius: 5px;
+           overflow: hidden;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           transition: transform 0.3s ease;
+       }
+
+       .tout-savoir .actu:hover {
+           transform: translateY(-5px);
+       }
+
+       .tout-savoir .actu img {
+           width: 100%;
+           height: 200px;
+           object-fit: cover;
+           margin-bottom: .1rem;
+       }
+
+       .tout-savoir .detail-sur {
+           padding: 1rem;
+       }
+
+       .tout-savoir .detail-sur h6 {
+           color: #E30613;
+           text-decoration: none;
+           font-size: 1rem;
+           font-weight: bold;
+       }
+
+       .tout-savoir .detail-sur h4 {
+           color: #333;
+           text-decoration: none;
+           font-size: 1rem;
+           font-weight: bold;
+       }
+
+
+
+       .tout-savoir .detail-sur h5 {
+           color: #555;
+           margin-bottom: 0.5rem;
+       }
+
+       .tout-savoir .detail-sur summary {
+           color: #777;
+           font-size: .8rem;
+           margin-bottom: .5rem;
+       }
+
+       .tout-savoir .detail-sur .time {
+           color: #009640;
+           font-size: .8rem;
+           margin-bottom: .2rem;
+       }
+
+       .tout-savoir .detail-sur p {
+           color: #777;
+
+       }
+
+       .tout-savoir .detail-sur .btn-group {
+           display: flex;
+           align-items: center;
+           /* Aligner les éléments verticalement */
+       }
+
+
+       .tout-savoir .detail-sur .what-btn {
+           display: inline-flex;
+           /* Utiliser flexbox pour aligner l'icône et le texte */
+           align-items: center;
+           /* Aligner les éléments verticalement */
+           padding: 0.5rem 1rem;
+           background-color: #fff;
+           /* Fond blanc */
+           color: #312783;
+           ;
+           /* Texte et icône rouges */
+           text-decoration: none;
+           border: 2px solid#312783;
+           ;
+           /* Bordure rouge de 2px */
+           border-radius: 5px;
+           margin-right: 0.5rem;
+           margin-bottom: 0.5rem;
+           transition: background-color 0.3s ease, color 0.3s ease;
+       }
+
+       .tout-savoir .detail-sur .btn-tel {
+           display: inline-flex;
+           /* Utiliser flexbox pour aligner l'icône et le texte */
+           align-items: center;
+           /* Aligner les éléments verticalement */
+           padding: 0.5rem 1rem;
+           background-color: #fff;
+           /* Fond blanc */
+           color: #E30613;
+           /* Texte et icône rouges */
+           text-decoration: none;
+           border: 2px solid #E30613;
+           /* Bordure rouge de 2px */
+           border-radius: 5px;
+           margin-right: 0.5rem;
+           margin-bottom: 0.5rem;
+           transition: background-color 0.3s ease, color 0.3s ease;
+       }
+
+       .tout-savoir .detail-sur .btn-tel:hover {
+           background-color: #E30613;
+           /* Fond rouge au survol */
+           color: #fff;
+           /* Texte et icône blancs */
+       }
+
+       .tout-savoir .detail-sur .what-btn:hover {
+           background-color: #312783;
+           /* Fond rouge au survol */
+           color: #fff;
+           /* Texte et icône blancs */
+       }
+
+       @media (max-width: 768px) {
+           header {
+               flex-direction: column;
+               text-align: center;
+           }
+
+           header .nav-links {
+               flex-direction: column;
+               gap: 10px;
+           }
+
+
+           .tout-savoir {
+               padding: 1rem;
+           }
+
+           .tout-savoir .box-container {
+               grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+           }
+       }
+
+       @media (max-width: 480px) {
+           .tout-savoir .filtre {
+               flex-direction: column;
+           }
+
+           .tout-savoir .filtre-g,
+           .tout-savoir .filtre-d {
+               margin-right: 0;
+               margin-bottom: 1rem;
+           }
+       }

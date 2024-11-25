@@ -1,0 +1,90 @@
+.container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #009640;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="phone"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #009640;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #007530;
+}
+
+.form-group .login-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-group .login-link a {
+    color: #E30613;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-group .login-link a:hover {
+    text-decoration: underline;
+}
+
+.terms-policy {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.terms-policy input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms-policy p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.terms-policy a {
+    color: #009640;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-policy a:hover {
+    text-decoration: underline;
+}

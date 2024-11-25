@@ -1,0 +1,123 @@
+ /* Section About */
+ .about-section {
+     padding: 1rem 2rem;
+     text-align: center;
+     background: #fff;
+     margin: 100px auto 0;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .about-section h1 {
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+     color: #009640;
+
+ }
+
+ .about-section h1  {
+     font-weight: bold;
+ }
+
+ .about-section p span{
+     font-size: 1.1rem;
+     line-height: 1.8;
+     color: black;
+     margin-bottom: 2rem;
+ }
+
+ .about-section .image {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 2rem;
+ }
+
+
+ .about-section .image img {
+     max-width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ h3 {
+     margin-top: 10px;
+     color: #E30613;
+     font-weight: bold;
+     font-size: 1.5rem
+ }
+
+ .about-section .stats {
+     display: flex;
+     justify-content: space-around;
+     gap: 20px;
+     flex-wrap: wrap;
+     margin-top: 2rem;
+ }
+
+ .about-section .stat {
+     background: #efefef !important;
+     padding: 1.5rem;
+     border-radius: 10px;
+     flex: 1;
+     max-width: 300px;
+     text-align: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .about-section .stat:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ }
+
+ .about-section .stat h3 {
+     font-size: 2rem;
+     color: #F9B233;
+     margin-bottom: 0.5rem;
+ }
+
+ .about-section .stat p {
+     color: white;
+ }
+
+ .about-section .stat {
+     font-size: 1rem;
+     color: #777;
+ }
+
+ .about-section h3 {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+ }
+
+ .about-section ul {
+     padding-left: 0;
+     list-style: none;
+ }
+
+ .about-section li {
+     text-align: left;
+     margin-bottom: 0.5rem;
+     padding-left: 1rem;
+ }
+
+ .about-section li::before {
+     content: "•";
+     color: #009640;
+     margin-right: 0.5rem;
+ }
+
+ .about-section li strong {
+     color: #009640;
+ }
+
+ .unique-features {
+     text-align: start
+ }
+
+ .unique-features h3 {
+     font-size: 1.5rem;
+     font-weight: 700;
+     color: #009640;
+
+ }

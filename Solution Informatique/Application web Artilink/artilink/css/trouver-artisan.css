@@ -1,0 +1,248 @@
+   /* Reset CSS */
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+    font-family: Arial, sans-serif;
+       line-height: 1.6;
+       background-color: #f2f2f2;
+   }
+
+   /* Style du conteneur du filtre */
+   .filtre {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 1rem;
+   }
+
+   .search-container {
+       position: relative;
+       width: 20%;
+   }
+
+   .search-input {
+       width: 100%;
+       padding: 0.5rem 2rem;
+       border: 2px solid #E30613;
+       border-radius: 5px;
+       font-size: 1rem;
+       color: #333;
+       background-color: #fff;
+       transition: border-color 0.3s ease, box-shadow 0.3s ease;
+       box-sizing: border-box;
+   }
+
+   .search-input:focus {
+       border-color: #E30613;
+       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+       outline: none;
+   }
+
+   .search-icon {
+       position: absolute;
+       top: 55%;
+       transform: translateY(-50%);
+       font-size: 1.2rem;
+       color: #E30613;
+       margin-left: 5%;
+   }
+
+   .fa-search {
+       color: gray;
+   }
+
+   /* Tout savoir section */
+   .tout-savoir {
+       padding: 6rem 2rem 2rem;
+       /* Ajout de 6rem de padding en haut */
+   }
+
+   .tout-savoir .en-tete {
+       font-size: 2rem;
+       margin-bottom: 1rem;
+   }
+
+   .tout-savoir .en-tete span {
+       color: #E30613;
+   }
+
+   .tout-savoir .filtre {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 1rem;
+   }
+
+   .tout-savoir .filtre-g,
+   .tout-savoir .filtre-d {
+       flex: 1;
+       margin-right: 1rem;
+   }
+
+   .tout-savoir .box-container {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+       grid-gap: 1rem;
+   }
+
+   .tout-savoir .actu {
+       background-color: #fff;
+       border-radius: 5px;
+       overflow: hidden;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       transition: transform 0.3s ease;
+   }
+
+   .tout-savoir .actu:hover {
+       transform: translateY(-5px);
+   }
+
+   .tout-savoir .actu img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+   }
+
+   .tout-savoir .detail-sur {
+       padding: .5rem 1rem;
+   }
+
+   .tout-savoir .detail-sur h6 a {
+       color: #333;
+       text-decoration: none;
+       font-size: .9rem;
+       font-weight: bold;
+   }
+
+   .tout-savoir .detail-sur h6 a:hover {
+       color: #E30613;
+   }
+
+   .tout-savoir .detail-sur p {
+       color: #777;
+       margin-bottom: .4rem;
+   }
+
+   .tout-savoir .detail-sur .btn-group {
+       display: flex;
+       align-items: center;
+   }
+
+   .tout-savoir .detail-sur .what-btn {
+       color: #009640;
+       display: inline-flex;
+       align-items: center;
+       font-size: 0.875rem;
+       padding: 0.4rem 0.8rem;
+       border-radius: 5px;
+       border: 2px solid #009640;
+   }
+
+   .tout-savoir .detail-sur .what-btn:hover {
+       background-color: #009640;
+       color: white;
+       border: 2px solid #009640;
+   }
+
+   .tout-savoir .detail-sur .btn-tel {
+       color: #312783;
+       display: inline-flex;
+       align-items: center;
+       font-size: 0.875rem;
+       padding: 0.4rem 0.8rem;
+       border-radius: 5px;
+       border: 2px solid #312783;
+   }
+
+
+   .tout-savoir .detail-sur .btn-tel:hover {
+       background-color: #312783;
+       color: white;
+       border: 2px solid #312783;
+   }
+
+   .btn-group a {
+       text-decoration: none;
+   }
+
+   .tout-savoir .detail-sur .btn-tel,
+   .tout-savoir .detail-sur .what-btn {
+       display: inline-flex;
+       align-items: center;
+       font-size: 0.875rem;
+       padding: 0.4rem 0.8rem;
+       border-radius: 5px;
+       margin-right: 0.5rem;
+       margin-bottom: 0.5rem;
+       transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+   .load-more-btn {
+       display: inline-block;
+       margin-top: 1.5rem;
+       padding: 0.5rem 1rem;
+       background-color: #E30613;
+       color: #fff;
+       text-decoration: none;
+       border-radius: 25px;
+       border: none;
+       transition: background-color 0.3s;
+   }
+
+   .load-more-btn:hover {
+       background-color: #009640;
+   }
+
+   .tout-savoir .detail-sur .nom {
+       font-weight: bold;
+       color: #312783;
+   }
+
+   /* Responsive styles */
+   @media (max-width: 768px) {
+       header {
+           flex-direction: column;
+           align-items: flex-start;
+       }
+
+       header .logo {
+           margin-bottom: 1rem;
+       }
+
+       header nav ul {
+           flex-direction: column;
+       }
+
+       header nav ul li {
+           margin-bottom: 0.5rem;
+       }
+
+       .tout-savoir {
+           padding: 1rem;
+       }
+
+       .tout-savoir .box-container {
+           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+       }
+
+       .filtre {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .search-container {
+           width: 100%;
+       }
+
+       .search-input {
+           width: 100%;
+       }
+
+       .search-icon {
+           top: 30%;
+           left: 5%;
+           font-size: 1rem;
+       }
+   }

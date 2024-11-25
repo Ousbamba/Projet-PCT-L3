@@ -1,0 +1,93 @@
+.profil form {
+    max-width: 100rem;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titre {
+    font-size: 1.5rem;
+    color: #009640;
+    margin-bottom: .5rem;
+}
+
+.photo-profil {
+    position: relative;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.photo-profil img {
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+}
+
+.photo-profil input[type="file"] {
+    display: none;
+}
+
+.photo-profil label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #009640;
+    color: #fff;
+    border: none;
+    padding: .4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.photo-profil label:hover {
+    background-color: #007530;
+}
+
+.details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details span {
+    font-weight: bold;
+}
+
+.profil input[type="text"],
+.profil input[type="number"],
+.profil input[type="tel"] {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.champ-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn a {
+    text-decoration: none;
+}

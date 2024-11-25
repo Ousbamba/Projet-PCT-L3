@@ -1,0 +1,131 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    padding-top: 80px; /* Espace pour le header fixe */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #fff;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #009640;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="file"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #009640;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #007832;
+}
+
+/* Footer styles */
+footer {
+    background-color: #009640;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #009640;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+footer .social-links a:hover {
+    color: #E30613;
+}
+
+footer p.copyright {
+    margin: 0;
+    font-size: 0.875rem;
+    margin-left: 100px; /* Ajouter de l'espacement entre le logo et le copyright */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-section {
+        padding: 2rem;
+    }
+}

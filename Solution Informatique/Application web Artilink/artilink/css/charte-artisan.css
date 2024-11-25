@@ -1,0 +1,73 @@
+  /* Reset CSS */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+      background-image: url("../images/logo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      margin-top: 70px;
+
+
+  }
+
+  /* Header styles */
+
+  /* Charte styles */
+  .charte-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+  }
+
+  .charte-container h1,
+  .charte-container h2 {
+      color: #009640;
+      margin-bottom: 1rem;
+      font-weight: bold;
+  }
+
+  .charte-container p {
+      margin-bottom: 1rem;
+      color: #333;
+  }
+
+  .charte-container ul {
+      margin-bottom: 1rem;
+      color: #333;
+      padding-left: 1.5rem;
+  }
+
+  .charte-container ul li {
+      margin-bottom: 0.5rem;
+  }
+
+  h3 {
+      color: #312783;
+  }
+
+  .btn-retour {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #E30613;
+      color: #fff;
+
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+  }
+
+  .btn-retour:hover {
+      background-color: #c2000b;
+  }
